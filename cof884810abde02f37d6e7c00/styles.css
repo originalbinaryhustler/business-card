@@ -1,0 +1,112 @@
+body {
+    margin: 20px;
+    /*
+    Challenge:
+    Find a web safe font you like, and add it 
+    to your card.
+    */
+    opacity: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: all ease-in-out 400ms;
+    cursor: crosshair;
+    animation: appear 2200ms 30ms 1 forwards;
+    color: #2b2839;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        
+    }
+    
+    to {
+        opacity: 1;
+    }
+}
+
+.avatar {
+    width: 150px;
+}
+
+.card {
+    animation: float 2400ms 120ms infinite alternate both;
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #00000077;
+    color: black;
+    box-shadow: 0 3px 0 #000;
+     border: #1c1c1c1c99 3px inset;
+    border-radius: 12px;
+    transition: all ease-in-out 400ms;
+    /*
+    Challenge:
+    Find a color palette you like on Coolors.co
+    and use it in your business card.
+     */
+}
+@keyframes  float {
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(200px);
+    }
+}
+
+
+.card:hover {
+    transition: all ease-in-out 400ms;
+    border-color: yellow;
+    box-shadow: 0 3px 0 yellow;
+    transform: translateY(12px);
+    animation: none;
+}
+
+p span {
+    font-size: 1.2em;
+    font-weight: bolder;
+    color: aliceblue;
+    display: block;
+    margin: .5em;
+  
+}
+p span:hover {
+    text-decoration: underline;
+    
+}
+
+p:hover {
+    transition: all ease-in 500ms;
+    color: yellow;
+}
+
+h3 span:hover{
+    transition: all ease-in-out 300ms 20ms;
+    color: yellow;
+    font-weight: bolder;
+}
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
+/*
+Final challenge:
+Download the code to your local computer and place it
+in a folder called "business-card"
+*/
